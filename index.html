@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf-8' />
-  <title>Where Should I Move? 126</title>
+  <title>Where Should I Move? 130</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
@@ -118,12 +118,14 @@
       var popup = new mapboxgl.Popup;
       map.on('mouseenter', 'tilequery-points', function(e) {
         map.getCanvas().style.cursor = 'pointer';
+        console.log("here1");
         var name = '<h3>' + e.features[0].properties['name'] + '</h3>';	   
         var phoneNumber = '<p>' + "Phone No. : " + e.features[0].properties['phone_number'] + '</p>';	
         var additionalInfo = '<p>' + e.features[0].properties['additional_info'] + '</p>';	
         var lon = e.features[0].properties.Longitude;	        
         var lat = e.features[0].properties.Latitude;	        
         var coordinates = new mapboxgl.LngLat(lon, lat);	
+        console.log(coordinates, "here2");
         var content = name + phoneNumber + additionalInfo;
         console.log(content);
         popup.setLngLat(coordinates)
