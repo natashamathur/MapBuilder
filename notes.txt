@@ -1,0 +1,17 @@
+All By Neighborhood
+
+1. TRANSPORTATION:
+  1A. Shape File for L Lines:
+    https://data.cityofchicago.org/Transportation/CTA-L-Rail-Lines-Shapefile/53r7-y88m
+
+2. SCHOOLS:
+  2A. CPS Data Portal - SQRP Ratings, Demographics, Metrics
+    https://cps.edu/SchoolData/Pages/SchoolData.aspx
+    
+3. INCOME - PER CAPITA INCOME 
+
+4. CULTURAL - CONCENTRATION OF RESTAURANTS
+
+5. RENT - MEDIAN PRICE OF A ONE-BEDROOM APARTMENT
+
+6. PERCENT OF YOUNG PEOPLE 
