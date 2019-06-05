@@ -65,7 +65,7 @@
       var marker = new mapboxgl.Marker({'color': '#000000'})
       geocoder.on('result', function(data) {
         var point = data.result.center;
-        var tileset = 'kevsun92.00ru2jav';
+        var tileset = 'natashamathur.9qgupot2';
         var radius = 1609;
         var limit = 50;
         var query = 'https://api.mapbox.com/v4/' + tileset + '/tilequery/' + point[0] + ',' + point[1] + '.json?radius=' + radius + '&limit= ' + limit + ' &access_token=' + mapboxgl.accessToken;
@@ -86,7 +86,7 @@
       });
       map.addLayer({
         id: "tilequery-points",
-        type: "circle",
+        type: "square",
         source: "tilequery",
         paint: {
           "circle-stroke-color": "white",
@@ -120,11 +120,9 @@
       var popup = new mapboxgl.Popup;
       map.on('mouseenter', 'tilequery-points', function(e) {
         map.getCanvas().style.cursor = 'pointer';
-        var propertyName = '<h3>' + "Property Name: " + e.features[0].properties['Property Name'] + '</h3>';	        
-        var propertyType = '<p>' + "Property Type: " + e.features[0].properties['Property Type'] + '</p>';	
-        var communityArea = '<p>' + "Community Area: " + e.features[0].properties['Community Area Name'] + '</p>';	
-        var Address = '<p>' + "Address: " + e.features[0].properties['Address'] + '</p>';	        
-        var phoneNumber = '<p>' + "Phone No. : " + e.features[0].properties['Phone Number'] + '</p>';	
+        var name = '<h3>' + e.features[0].properties['name'] + '</h3>';	   
+        var phoneNumber = '<p>' + "Phone No. : " + e.features[0].properties['phone_number'] + '</p>';	
+        var additionalInfo = '<p>' + e.features[0].properties['additional_info'] + '</p>';	
         var lon = e.features[0].properties.Longitude;	        
         var lat = e.features[0].properties.Latitude;	        
         var coordinates = new mapboxgl.LngLat(lon, lat);	       
