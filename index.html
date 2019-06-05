@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf-8' />
-  <title>Where Should I Move? 122</title>
+  <title>Where Should I Move? 124</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
@@ -124,7 +124,7 @@
         var lon = e.features[0].properties.Longitude;	        
         var lat = e.features[0].properties.Latitude;	        
         var coordinates = new mapboxgl.LngLat(lon, lat);	       
-        var content = propertyName + propertyType + communityArea + Address + phoneNumber;
+        var content = name + phoneNumber + additionalInfo;
         popup.setLngLat(coordinates)
           .setHTML(content)
           .addTo(map);
