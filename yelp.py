@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-
-"""
-Authors: Kevin Sun
-Date of Last Edit: 6.3.2019
-"""
-
 import os
 import sys
 import pandas as pd
