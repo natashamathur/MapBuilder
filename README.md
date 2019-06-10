@@ -9,3 +9,5 @@ Hosted on [JKAN](https://sun-kev.github.io/jkan/) using [Mapbox](https://www.map
 - [`JKAN Code`](https://github.com/Sun-Kev/jkan)
 
 Built by [Kevin Sun](https://github.com/Sun-Kev) and [Natasha Mathur](https://github.com/natashamathur)
+
+If there are any issues opening a notebook, please enter the link into the renderer at the following site: https://nbviewer.jupyter.org/
