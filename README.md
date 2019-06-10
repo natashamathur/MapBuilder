@@ -4,8 +4,8 @@ The code in this repo pulls together information from [Chicago](https://data.cit
 
 Hosted on [JKAN](https://sun-kev.github.io/jkan/) using [Mapbox](https://www.mapbox.com/).
 
-- [`Chicago Map`](https://sun-kev.github.io/jkan/chicago_map/) [`Code`](https://github.com/Sun-Kev/jkan/tree/gh-pages/chicago_map)
-- [`NYC Map`](https://sun-kev.github.io/jkan/nyc_map/) [`Code`](https://github.com/Sun-Kev/jkan/tree/gh-pages/nyc_map)
+- [`Chicago Map`](https://sun-kev.github.io/jkan/map_of_chicago/) [`Code`](https://github.com/Sun-Kev/jkan/tree/gh-pages/map_of_chicago)
+- [`NYC Map`](https://sun-kev.github.io/jkan/map_of_nyc/) [`Code`](https://github.com/Sun-Kev/jkan/tree/gh-pages/map_of_nyc)
 - [`JKAN Code`](https://github.com/Sun-Kev/jkan)
 
 Built by [Kevin Sun](https://github.com/Sun-Kev) and [Natasha Mathur](https://github.com/natashamathur)
